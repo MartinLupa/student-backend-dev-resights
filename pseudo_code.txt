@@ -1,0 +1,18 @@
+Ask for input (it could be any person/company in the dataset)
+
+#for each item of dataset:
+  if (input == item.source_name) {
+    for each item of dataset 
+      if (input.source_depth < item.source_depth && input.target_name == item.source_name) {
+        property_value_over_target = input.share * item.share
+        print property_value_over_target
+      }
+  }
+
+
+for each item of dataset: 
+  if (input.source_depth < item.source_depth && input.target_name == item.source_name) {
+    property_value_over_target = input.share * item.share
+    print property_value_over_target
+  }
+}
