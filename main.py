@@ -31,7 +31,7 @@ else:
 
 #Iterate over dataset:
 for company in network:
-    if input_target_name == "Resights ApS":
+    if input_target_name == "Resights ApS" and input_source_name == company["source_name"]:
         company_share = company["share"]
         converted_company_share = [int(x) for x in company_share.replace("%", "").split("-")]
         break
